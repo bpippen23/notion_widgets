@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Montserrat', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 2px solid #000000;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="youtube" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-youtube"></i> YouTube</a>
+		<a id="instagram" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+		<a id="reels" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-film"></i> Reels (IG, TT, YT)</a>
+		<a id="pinterest" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-pinterest"></i> Pinterest</a>
+		<a id="etsy" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-etsy"></i> Etsy</a>
+		<a id="ideas" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-lightbulb"></i> Ideas</a>
+		<a id="content-schedule" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i> Content Schedule</a>
+		<a id="status" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-spinner"></i> Status</a>
+		<a id="content-database" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-server"></i> Content Database</a>
+		<a id="broll-assets" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-folder-open"></i> B-roll & Assets</a>
+		<a id="other-dump" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-dumpster-fire"></i> Other/Dump</a>
+		<a id="income" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-sack-dollar"></i> Income</a>
+		<a id="business-expenses" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-credit-card"></i> Business Expenses</a>
+		<a id="analytics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-chart-line"></i> Analytics</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Content-Hubbb-a2cfa1efe6a8417993d38f3bf6d9678e?pvs=4", '_blank').focus();
+			else if (id == 'youtube')
+				window.open("https://www.notion.so/YouTube-320d52e6f51a460b9120fcda6cb3485a?pvs=4", '_blank').focus();
+			else if (id == 'instagram')
+				window.open("https://www.notion.so/Instagram-1e4c71d942fa494eb3ee6782d681d2df?pvs=4", '_blank').focus();
+			else if (id == 'reels')
+				window.open("https://www.notion.so/Reels-fcb0f67bf33f48479eb285c89f1092a7?pvs=4", '_blank').focus();
+			else if (id == 'pinterest')
+				window.open("https://www.notion.so/Pinterest-56ce7b95e44a408ea4e8befbabf7f899?pvs=4", '_blank').focus();
+			else if (id == 'etsy')
+				window.open("https://www.notion.so/Etsy-10c33fac0a5d4670abb9fe729c725c11?pvs=4", '_blank').focus();
+			else if (id == 'ideas')
+				window.open("https://www.notion.so/Ideas-de8466cf1bb4425a866a17617ef3f4f0?pvs=4", '_blank').focus();
+			else if (id == 'content-schedule')
+				window.open("https://www.notion.so/Content-Schedule-2f0206301d58493f8628180e47912ac4?pvs=4", '_blank').focus();
+			else if (id == 'status')
+				window.open("https://www.notion.so/Status-810c4853b0f84f2cae1bb44dbec02f71?pvs=4", '_blank').focus();
+			else if (id == 'content-database')
+				window.open("https://www.notion.so/Content-Database-fb3c321c587e4cc6948c5c9cd5091305?pvs=4", '_blank').focus();
+			else if (id == 'broll-assets')
+				window.open("https://www.notion.so/B-Roll-Assets-d59689098ee44fbea57b4cac574debf9?pvs=4", '_blank').focus();
+			else if (id == 'other-dump')
+				window.open("https://www.notion.so/Other-Dump-4dd7b6a03f2c42b49fd92c776c53e8b3?pvs=4", '_blank').focus();
+			else if (id == 'income')
+				window.open("https://www.notion.so/Income-060e904250504ce4a53c355cd84c6e25?pvs=4", '_blank').focus();
+			else if (id == 'business-expenses')
+				window.open("https://www.notion.so/Business-Expenses-6b5df00c33d14913884d3a09f5630f44?pvs=4", '_blank').focus();
+			else if (id == 'analytics')
+				window.open("https://www.notion.so/Analytics-afdda06452a546ce996566178610f340?pvs=4", '_blank').focus();
+			
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
